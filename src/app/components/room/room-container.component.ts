@@ -1,15 +1,5 @@
-import {
-  Component,
-  ContentChild,
-  EventEmitter,
-  Inject,
-  Input,
-  OnInit,
-  Output,
-  Renderer2
-} from '@angular/core';
+import {Component, ContentChild, EventEmitter, Inject, Input, OnInit, Output, Renderer2} from '@angular/core';
 import {RoomModel} from '../../model/game/room.model';
-import {FeedbackComponent} from '../modal/feedback/feedback.component';
 import {ModalService} from '../../service/modal.service';
 import {ProgressModel} from '../../model/user/progress.model';
 import {PlayedLevelModel} from '../../model/user/played-level.model';
@@ -66,15 +56,7 @@ export class RoomContainerComponent implements OnInit {
 
 
     this.abstractRoom.walkTo('door', () => {
-      if (!this.level.roomFeedback && this.level.level < 5 && this.progressService.mandatoryQuestionForRoomIsAnswered(this.room)) {
-        this.modalService.openDialog(FeedbackComponent, false).subscribe(() => {
-          if (this.level.roomFeedback) {
-            leaveRoom();
-          }
-        });
-      } else {
-        leaveRoom();
-      }
+      leaveRoom();
     });
   }
 

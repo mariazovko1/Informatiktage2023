@@ -68,14 +68,15 @@ export class RecruitingComponent extends AbstractRoom {
   public zoraClick() {
     if (this.starClickCounter >= this.clickToGetZora) {
       this.walkTo('zora', () => {
-        this.openQuestion('room5coin1', '/assets/sprites/Room/5-recruiting/Zora.svg');
+        this.openInfo('room5feedbackDanke', '/assets/sprites/Room/5-recruiting/Franco.svg');
+
       });
     }
   }
 
   public jellyFishClick() {
     this.walkTo('jellyfish', () => {
-      this.openQuestion('room5coin3', '/assets/sprites/Room/5-recruiting/Jellyfish.svg', );
+      this.openQuestion('room5coin3', '/assets/sprites/Room/5-recruiting/Jellyfish.svg',);
     });
   }
 
@@ -176,13 +177,7 @@ export class RecruitingComponent extends AbstractRoom {
    */
   public francoClick(): void {
     this.walkTo('franco', () => {
-      if (!this.progress.feedbackCompleted) {
-        this.openInfo('room5finishText', '/assets/sprites/Room/5-recruiting/Franco.svg', () => {
-          this.openITDFeedback();
-        });
-      } else {
-        this.openInfo('room5feedbackDanke', '/assets/sprites/Room/5-recruiting/Franco.svg');
-      }
+      this.openQuestion('room5coin1', '/assets/sprites/Room/5-recruiting/Zora.svg');
     });
   }
 

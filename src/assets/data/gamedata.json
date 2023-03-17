@@ -9,9 +9,10 @@
       "questions": [
         {
           "key": "room1key",
-          "questionText": "Wie oft begegnet dem Protagonisten auf dem Weg zu seiner Arbeit die Informatik?",
+          "questionText": "Wie oft begegnet Gian auf dem Weg zu seiner Arbeit die Informatik?",
           "correctAnswers": [
             "Nie",
+            "3-Mal",
             "6-Mal"
           ],
           "correctAnswer": "6-Mal",
@@ -183,7 +184,7 @@
       "questions": [
         {
           "key": "room5coin1",
-          "questionText": "Welchen beruf braucht es nicht unbedingt um eine App zu entwickeln?",
+          "questionText": "Welchen Beruf braucht es nicht unbedingt um eine App zu entwickeln?",
           "correctAnswers": [
             "Entwickler digitales Business",
             "Applikationsentwickler",
@@ -191,7 +192,7 @@
             "Es braucht alle!"
           ],
           "correctAnswer": "Es braucht alle!",
-          "isMandatory": false
+          "isMandatory": true
         },
         {
           "key": "room5coin3",
@@ -218,8 +219,8 @@
         },
         {
           "key": "room5feedbackDanke",
-          "text": "Danke für dein Feedback und für deinen Besuch. Wir hoffen, dir hat die Erlebnisreise durch die Welt der Informatik gefallen. Viel Spass beim Experimentieren im letzten Raum!",
-          "givesCoin": false
+          "text": "Danke für deinen Besuch. Wir hoffen, dir hat die Erlebnisreise durch die Welt der Informatik gefallen. Viel Spass beim Experimentieren im letzten Raum!",
+          "givesCoin": true
         },
         {
           "key": "room5wettbewerb",
@@ -249,7 +250,7 @@
           "correctAnswers": [
             "Zirp Zirp!", "Schlup Schlup!", "Bääh Bääh!"
           ],
-          "correctAnswer": "Zirp Zirp",
+          "correctAnswer": "Zirp Zirp!",
           "isMandatory": false
         }
       ],
@@ -325,33 +326,6 @@
           "givesCoin": false
         }
       ]
-    }
-  ],
-  "feedback": [
-    {
-      "number": 1,
-      "frage": "Wie hat dir dein Besuch bei uns bis jetzt gefallen?",
-      "isMandatory": true
-    },
-    {
-      "number": 2,
-      "frage": "Wie gut weisst du nun, was der Beruf eines Informatikers beinhaltet?",
-      "isMandatory": true
-    },
-    {
-      "number": 3,
-      "frage": "Wie wahrscheinlich ist es, dass du dich bei der Zürcher Kantonalbank auf eine offene Stelle in der Informatik bewerben würdest?",
-      "isMandatory": true
-    },
-    {
-      "number": 4,
-      "frage": "Was hat dir besonders gefallen? (optional)",
-      "isMandatory": false
-    },
-    {
-      "number": 5,
-      "frage": "Was hättest du dir anders/zusätzlich gewünscht? (optional)",
-      "isMandatory": false
     }
   ]
 }
