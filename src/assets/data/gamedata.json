@@ -71,6 +71,7 @@
             "Kunden",
             "Chef"
           ],
+          "givesCoin": true,
           "correctAnswer": "Kunden",
           "isMandatory": false
         }
